@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mange Mots</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <div id="input_container">
+        <div id="parameters">
+          <label for="nbWordsPerMinutes">Nb mots par minutes</label>
+          <input id="nbWordsPerMinutes" type="text" value="50" />
+          <label for="nbLettersBonus">Bonus mot long</label>
+          <input id="nbLettersBonus" type="text" value="10" />
+          <label for="wordSize">Taille d'affichage</label>
+          <input id="wordSize" type="text" value="2" />
+        </div>
+        <textarea rows="8" cols="80" wrap="hard" id="text"></textarea>
+        <button id="action">Mange les mots!</button>
+      </div>
+      <div class="center prompt_text" id="word_display"></div>
+    </div>
+  </body>
+</html>
